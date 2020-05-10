@@ -1,0 +1,6 @@
+location /webcam {
+	 rewrite  ^/webcam/(.*) /$1 break;
+	 root /tmp/webcam/;
+	 index index.html;
+	 autoindex on;
+}
